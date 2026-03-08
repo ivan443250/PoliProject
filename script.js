@@ -16,18 +16,20 @@ startFireworks()
 }
 
 }
-
-document.getElementById("next").onclick=()=>showSlide(index+1)
 document.getElementById("prev").onclick=()=>showSlide(index-1)
 
+
+// письмо
+
+const letter=document.getElementById("letter")
+
 document.getElementById("openLetter").onclick=()=>{
-document.querySelector(".letter").classList.remove("hidden")
+letter.classList.remove("hidden")
 }
 
-
-
-
-
+document.getElementById("closeLetter").onclick=()=>{
+letter.classList.add("hidden")
+}
 
 // particles background
 
@@ -72,9 +74,6 @@ drawParticles()
 
 
 
-
-
-
 // fireworks
 
 function startFireworks(){
@@ -100,6 +99,22 @@ setTimeout(()=>div.remove(),1500)
 
 },i*150)
 
+}
+
+}
+
+const music=document.getElementById("music")
+const musicBtn=document.getElementById("next")
+
+let playing=false
+
+musicBtn.onclick=()=>{
+
+showSlide(index+1)
+
+if(!playing){
+music.play()
+playing=true
 }
 
 }

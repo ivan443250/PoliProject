@@ -1,6 +1,6 @@
 body{
 margin:0;
-font-family: -apple-system,BlinkMacSystemFont;
+font-family:-apple-system,BlinkMacSystemFont;
 overflow:hidden;
 background:#0a0a0a;
 color:white;
@@ -107,6 +107,10 @@ color:white;
 margin-top:25px;
 }
 
+.musicControl{
+margin-top:15px;
+}
+
 .letter{
 position:fixed;
 bottom:0;
@@ -131,6 +135,15 @@ padding:40px;
 border-radius:20px;
 width:80%;
 animation:pop 1s;
+position:relative;
+}
+
+.closeLetter{
+position:absolute;
+top:10px;
+left:10px;
+font-size:14px;
+padding:8px 12px;
 }
 
 @keyframes pop{

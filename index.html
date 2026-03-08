@@ -11,6 +11,11 @@
 
 <canvas id="particles"></canvas>
 
+<!-- Музыка -->
+<audio autoplay loop id="music">
+<source src="msc/music.mp3" type="audio/mpeg">
+</audio>
+
 <div class="container">
 
 <header>
@@ -51,14 +56,20 @@
 <button id="openLetter">Открыть письмо ✉</button>
 </div>
 
-<div class="letter hidden">
+<div class="letter hidden" id="letter">
+
 <div class="letterContent">
+
+<button class="closeLetter" id="closeLetter">← Назад</button>
+
 <h2>С 8 Марта!</h2>
+
 <p>
 Пусть каждый день приносит радость,  
 улыбки и вдохновение.  
 Ты делаешь этот мир красивее.
 </p>
+
 </div>
 </div>
 
